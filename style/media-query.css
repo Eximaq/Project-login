@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+:root {
+  --cor01: #49668c;
+  --cor02: #2c5559;
+  --cor03: #d99b66;
+  --cor04: #d98162;
+  --cor05: #bf6f6f;
+}
+
+/* Typical Device Breakpoints
+     
+    Extra small devices (phones, 600px and down) 
+@media only screen and (max-width: 600px) {...}
+
+    Small devices (portrait tablets and large phones, 600px and up) 
+@media only screen and (min-width: 600px) {...}
+     Medium devices (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) {...}
+
+    Large devices (laptops/desktops, 992px and up) 
+@media only screen and (min-width: 992px) {...}
+
+    Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {...}
+
+*/
+
+@media screen (min-width: 300px) and (max-width: 768px) {
+
+    body {
+        background-image: linear-gradient(to bottom, var(--cor05), var(--cor04), var(--cor03), var(--cor01));
+    }
+
+
+  section#login {
+    width: 90vw;
+  }
+
+  section#login > div#img {
+    float: left;
+    width: 40%;
+    height: 100%;
+  }
+
+  section#login > div#form {
+    float: right;
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+    
+    body {
+        background-image: linear-gradient(to bottom, var(--cor05), var(--cor04), var(--cor03), var(--cor01));
+    }
+    
+    section#login {
+        width: 768px;
+    }
+
+    section#login > div#img {
+        float: left;
+        width: 40%;
+        height: 100%;
+    }
+
+    section#login > div#form {
+        float: right;
+        width: 60%;
+    }
+}
